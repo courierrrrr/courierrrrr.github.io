@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
   <script>
     // Set the theme before the page draws so it doesn't flash the wrong colors.
     try { if (localStorage.getItem("theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}
@@ -66,6 +66,38 @@
         <div>
           <h3>Video editing</h3>
           <ul class="tags"><li>DaVinci Resolve</li><li>Color grading</li><li>After Effects</li></ul>
+        </div>
+      </div>
+
+      <h2 class="label">Setup</h2>
+      <div class="setup">
+        <div class="terminal">
+          <div class="terminal-bar"><span></span><span></span><span></span><em>desktop — fastfetch</em></div>
+          <pre><span class="prompt">georgia@desktop</span> <span class="dim">~</span> $ fastfetch
+<b>OS</b>        Windows 11 Home x86_64
+<b>Board</b>     MSI MS-7C02 (B450 Tomahawk)
+<b>CPU</b>       AMD Ryzen 5 3600 (6C / 12T)
+<b>GPU</b>       AMD Radeon RX 9060 XT
+<b>Memory</b>    16 GiB
+<b>Storage</b>   1 TB NVMe
+<b>Shell</b>     PowerShell
+<b>Editing</b>   DaVinci Resolve · After Effects</pre>
+        </div>
+
+        <div class="terminal">
+          <div class="terminal-bar"><span></span><span></span><span></span><em>laptop — fastfetch</em></div>
+          <pre><span class="prompt">georgia@x250</span> <span class="dim">~</span> $ fastfetch
+<b>OS</b>        Arch Linux x86_64 <span class="dim">(btw)</span>
+<b>Host</b>      ThinkPad X250
+<b>Kernel</b>    Linux 7.2.4
+<b>WM</b>        Hyprland 0.56.2 (Wayland)
+<b>Terminal</b>  kitty · bash
+<b>CPU</b>       Intel i5-5300U (2C / 4T)
+<b>GPU</b>       Intel HD Graphics 5500
+<b>Memory</b>    7.6 GiB · no swap
+<b>Disk</b>      226 GB ext4 (12% used)
+<b>Display</b>   12.5" 1366×768 @ 60 Hz
+<b>Locale</b>    el_GR.UTF-8</pre>
         </div>
       </div>
 

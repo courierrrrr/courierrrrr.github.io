@@ -336,3 +336,54 @@ footer {
 :root[data-theme="light"] .card:hover,
 :root[data-theme="light"] .video-entry:hover { box-shadow: 0 12px 32px -14px rgb(10 22 40 / 0.18); }
 .video-entry { transition: box-shadow 0.15s; }
+
+/* ---------- Setup: fastfetch-style terminal cards ---------- */
+.setup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.terminal {
+  background: #070f1d;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  color: #d6e2f3;
+}
+
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: #0d1a30;
+  border-bottom: 1px solid #1e3352;
+}
+.terminal-bar span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5f57;
+}
+.terminal-bar span:nth-child(2) { background: #febc2e; }
+.terminal-bar span:nth-child(3) { background: #28c840; }
+.terminal-bar em {
+  margin-left: 8px;
+  font-style: normal;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: #8da2c0;
+}
+
+.terminal pre {
+  margin: 0;
+  padding: 16px 18px 18px;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  line-height: 1.7;
+  overflow-x: auto;
+}
+.terminal b { color: #7cc4fa; font-weight: 500; }
+.terminal .prompt { color: #86efac; }
+.terminal .dim { color: #6b7f9e; }
