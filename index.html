@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name: coding projects and video editing work.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#about">your<span>name</span></a>
+    <nav class="tabs" role="tablist">
+      <a href="#about" role="tab" data-tab="about">About Me</a>
+      <a href="#coding" role="tab" data-tab="coding">Coding</a>
+      <a href="#editing" role="tab" data-tab="editing">Editing</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+  </header>
+
+  <main>
+    <!-- ========== ABOUT ME ========== -->
+    <section id="about" class="panel" role="tabpanel">
+      <div class="about-grid">
+        <div class="avatar" aria-hidden="true">YN</div>
+        <div>
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Your Name</h1>
+          <p class="lead">
+            A short one or two sentence intro. What you do, what you're into,
+            and what someone should know about you first.
+          </p>
+          <p>
+            A longer paragraph about yourself: where you're from, how you got into
+            coding and editing, what you're learning right now, and what kind of
+            work you're looking for.
+          </p>
+          <div class="links">
+            <a class="btn" href="https://github.com/courierrrrr" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">YouTube</a>
+            <a class="btn btn-ghost" href="mailto:you@example.com">Email</a>
+          </div>
+        </div>
+      </div>
+
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Coding</h3>
+          <ul class="chips">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Editing</h3>
+          <ul class="chips">
+            <li>Premiere Pro</li><li>After Effects</li><li>DaVinci Resolve</li><li>Color grading</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CODING PORTFOLIO ========== -->
+    <section id="coding" class="panel" role="tabpanel" hidden>
+      <h1>Coding Portfolio</h1>
+      <p class="lead">Things I've built. Copy a card below to add a new project.</p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card-thumb">🛠️</div>
+          <div class="card-body">
+            <h3>Project One</h3>
+            <p>One or two sentences on what it does and why you made it.</p>
+            <ul class="chips small"><li>JavaScript</li><li>HTML</li></ul>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Code →</a>
+              <a href="#" target="_blank" rel="noopener">Live demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">🤖</div>
+          <div class="card-body">
+            <h3>Project Two</h3>
+            <p>One or two sentences on what it does and why you made it.</p>
+            <ul class="chips small"><li>Python</li></ul>
+            <div class="card-links">
+              <a href="#" target="_blank" rel="noopener">Code →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb">🌐</div>
+          <div class="card-body">
+            <h3>This Website</h3>
+            <p>My portfolio, built with plain HTML, CSS and JavaScript and hosted on GitHub Pages.</p>
+            <ul class="chips small"><li>HTML</li><li>CSS</li><li>JS</li></ul>
+            <div class="card-links">
+              <a href="https://github.com/courierrrrr/courierrrrr.github.io" target="_blank" rel="noopener">Code →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== EDITING PORTFOLIO ========== -->
+    <section id="editing" class="panel" role="tabpanel" hidden>
+      <h1>Editing Portfolio</h1>
+      <p class="lead">Edits, montages and videos. Swap the placeholders for YouTube embeds.</p>
+
+      <div class="grid">
+        <article class="card">
+          <!-- To embed a YouTube video, replace the div below with:
+               <iframe class="video" src="https://www.youtube.com/embed/VIDEO_ID"
+                       title="Video title" allowfullscreen loading="lazy"></iframe> -->
+          <div class="video placeholder">▶</div>
+          <div class="card-body">
+            <h3>Edit One</h3>
+            <p>What it is, who it was for, and what you did (cuts, effects, color, sound).</p>
+            <ul class="chips small"><li>Premiere Pro</li></ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="video placeholder">▶</div>
+          <div class="card-body">
+            <h3>Edit Two</h3>
+            <p>What it is, who it was for, and what you did (cuts, effects, color, sound).</p>
+            <ul class="chips small"><li>After Effects</li></ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="video placeholder">▶</div>
+          <div class="card-body">
+            <h3>Edit Three</h3>
+            <p>What it is, who it was for, and what you did (cuts, effects, color, sound).</p>
+            <ul class="chips small"><li>DaVinci Resolve</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
