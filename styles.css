@@ -253,6 +253,7 @@ p:last-child { margin-bottom: 0; }
 
 /* ---------- Editing videos ---------- */
 .video-list { display: grid; gap: 28px; margin-top: 32px; }
+.label + .video-list { margin-top: 0; }
 
 .video-entry {
   background: var(--surface);
@@ -269,6 +270,26 @@ p:last-child { margin-bottom: 0; }
   display: block;
 }
 .video-player.placeholder { display: grid; border-style: none none dashed; }
+
+/* Vertical videos (Shorts, TikTok) sit three across */
+.shorts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.short-player {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  display: block;
+  background: #000;
+}
+
+.shorts-grid .video-info { padding: 14px 16px 16px; }
+.shorts-grid .video-info h3 { font-size: 0.95rem; }
+.shorts-grid .video-info p { font-size: 0.9rem; }
 
 .video-info { padding: 18px 22px 20px; }
 .video-info p { color: var(--muted); }
