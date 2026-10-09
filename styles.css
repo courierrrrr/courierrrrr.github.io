@@ -40,13 +40,22 @@ html, body {
 
 body {
   background: transparent;
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 0 20px;
+}
+
+/* Content column; the header bar runs edge to edge */
+main,
+footer,
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 main {
-  padding: 56px 0 24px;
+  padding-top: 56px;
+  padding-bottom: 24px;
   line-height: 1.65;
 }
 
@@ -66,7 +75,8 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 18px 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
 }
 
 .brand {
@@ -306,7 +316,8 @@ p:last-child { margin-bottom: 0; }
 footer {
   border-top: 1px solid var(--border);
   margin-top: 56px;
-  padding: 24px 0 40px;
+  padding-top: 24px;
+  padding-bottom: 40px;
   font-family: var(--mono);
   font-size: 0.85rem;
   color: var(--muted);
