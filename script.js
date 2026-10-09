@@ -32,3 +32,6 @@ document.querySelector(".theme-toggle").addEventListener("click", () => {
 });
 
 updateIcon();
+
+// ---------- Footer year ----------
+document.getElementById("year").textContent = new Date().getFullYear();

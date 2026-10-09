@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>courierrrrr</title>
-  <meta name="description" content="courierrrrr's portfolio: coding projects and video edits.">
+  <title>Your Name · Developer &amp; Video Editor</title>
+  <meta name="description" content="Portfolio of Your Name: software projects and video editing work.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="styles.css">
   <script>
     // Set the theme before the page draws so it doesn't flash the wrong colors.
@@ -16,16 +16,13 @@
 </head>
 <body>
   <header>
-    <a class="no_underline" href="#about"><h1 class="site-title">courierrrrr</h1></a>
-
     <nav class="container">
-      <div class="left">
-        <a href="#about" data-tab="about">[about]</a>
-        <a href="#coding" data-tab="coding">[coding]</a>
-        <a href="#editing" data-tab="editing">[editing]</a>
-      </div>
-      <div class="right">
-        <button class="theme-toggle" type="button" aria-label="Toggle light/dark mode">[<span class="theme-icon">☾</span>]</button>
+      <a class="brand" href="#about">courierrrrr</a>
+      <div class="nav-links">
+        <a href="#about" data-tab="about">about</a>
+        <a href="#coding" data-tab="coding">coding</a>
+        <a href="#editing" data-tab="editing">editing</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle light/dark mode"><span class="theme-icon">☾</span></button>
       </div>
     </nav>
   </header>
@@ -33,48 +30,61 @@
   <main>
     <!-- ==================== ABOUT ==================== -->
     <section id="about" class="panel">
-      <!-- Replace with your own image: <img src="images/me.gif" alt="..." class="hero-image"> -->
-      <div class="hero-image placeholder">your image / gif here</div>
+      <div class="intro">
+        <!-- Replace with your photo: <img class="avatar" src="images/me.jpg" alt="Your Name"> -->
+        <div class="avatar placeholder">YN</div>
+        <div>
+          <h1>Your Name</h1>
+          <p class="role">Developer &amp; Video Editor</p>
+          <p class="location">City, Country · Open to work</p>
+        </div>
+      </div>
 
-      <h1>Welcome to courierrrrr</h1>
-      <p class="centered_text"><em>“a short quote or tagline goes here”</em></p>
-      <br>
+      <p class="summary">
+        I build websites and tools, and I edit videos. One or two sentences about
+        what you do best and the kind of work you're looking for.
+      </p>
 
-      <h2>About me:</h2>
+      <div class="actions">
+        <a class="btn" href="#coding">View coding work</a>
+        <a class="btn btn-outline" href="#editing">View editing work</a>
+      </div>
+
+      <h2 class="label">About</h2>
       <div class="box">
         <p>
-          Hi! I'm <strong>Your Name</strong>. Write a few sentences about yourself:
-          who you are, where you're from, and what you're into.
-        </p>
-        <p>
-          I code and I edit videos. Check out my
-          <a href="#coding">/coding</a> projects and my <a href="#editing">/editing</a> work.
+          A longer paragraph about yourself: your background, how you got into
+          coding and editing, what you're learning now, and what drives your work.
         </p>
       </div>
-      <br>
 
-      <h2>Skills:</h2>
-      <div class="box">
-        <p><strong>coding</strong> · HTML · CSS · JavaScript · Python</p>
-        <p><strong>editing</strong> · Premiere Pro · After Effects · DaVinci Resolve</p>
+      <h2 class="label">Skills</h2>
+      <div class="box skills">
+        <div>
+          <h3>Development</h3>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Git</li></ul>
+        </div>
+        <div>
+          <h3>Video editing</h3>
+          <ul class="tags"><li>Premiere Pro</li><li>After Effects</li><li>DaVinci Resolve</li><li>Color grading</li></ul>
+        </div>
       </div>
-      <br>
 
-      <h2>Latest work:</h2>
+      <h2 class="label">Selected work</h2>
       <div class="box">
-        <ul class="post-list">
-          <li><a href="#editing" class="no_underline">[Edit One]</a> <small>October 2026</small></li>
-          <li><a href="#coding" class="no_underline">[Project One]</a> <small>September 2026</small></li>
+        <ul class="work-list">
+          <li><a href="#coding">Project One</a><span>Development · 2026</span></li>
+          <li><a href="#editing">Edit One</a><span>Video · 2026</span></li>
+          <li><a href="#coding">Project Two</a><span>Development · 2026</span></li>
         </ul>
       </div>
-      <br>
 
-      <h2>Find me:</h2>
+      <h2 class="label">Contact</h2>
       <div class="box">
-        <ul class="post-list">
-          <li><a href="https://github.com/courierrrrr" target="_blank" rel="noopener">[github]</a></li>
-          <li><a href="#" target="_blank" rel="noopener">[youtube]</a></li>
-          <li>[email] <small>you@example.com</small></li>
+        <ul class="work-list">
+          <li>Email<span>you@example.com</span></li>
+          <li><a href="https://github.com/courierrrrr" target="_blank" rel="noopener">GitHub</a><span>@courierrrrr</span></li>
+          <li><a href="#" target="_blank" rel="noopener">YouTube</a><span>@yourchannel</span></li>
         </ul>
       </div>
     </section>
@@ -82,33 +92,33 @@
     <!-- ==================== CODING ==================== -->
     <section id="coding" class="panel" hidden>
       <h1>Coding</h1>
-      <p class="centered_text"><em>things I've built</em></p>
+      <p class="summary">Selected software projects. Each card links to the code or a live demo.</p>
 
       <!-- Copy one <a class="card"> block to add a project. -->
       <div class="grid">
         <a class="card" href="#" target="_blank" rel="noopener">
-          <div class="card-image placeholder">[ screenshot ]</div>
+          <div class="card-image placeholder">screenshot</div>
           <div class="card-content">
             <h3 class="card-title">Project One</h3>
-            <p>What it does and why you made it.</p>
+            <p>What it does, the problem it solves, and your role in it.</p>
             <span class="card-meta">JavaScript · HTML · 2026</span>
           </div>
         </a>
 
         <a class="card" href="#" target="_blank" rel="noopener">
-          <div class="card-image placeholder">[ screenshot ]</div>
+          <div class="card-image placeholder">screenshot</div>
           <div class="card-content">
             <h3 class="card-title">Project Two</h3>
-            <p>What it does and why you made it.</p>
+            <p>What it does, the problem it solves, and your role in it.</p>
             <span class="card-meta">Python · 2026</span>
           </div>
         </a>
 
         <a class="card" href="https://github.com/courierrrrr/courierrrrr.github.io" target="_blank" rel="noopener">
-          <div class="card-image placeholder">[ screenshot ]</div>
+          <div class="card-image placeholder">screenshot</div>
           <div class="card-content">
-            <h3 class="card-title">This Website</h3>
-            <p>My portfolio, hand-written in HTML, CSS and JS on GitHub Pages.</p>
+            <h3 class="card-title">Portfolio Website</h3>
+            <p>This site, hand-written in HTML, CSS and JavaScript and hosted on GitHub Pages.</p>
             <span class="card-meta">HTML · CSS · JS · 2026</span>
           </div>
         </a>
@@ -118,31 +128,35 @@
     <!-- ==================== EDITING ==================== -->
     <section id="editing" class="panel" hidden>
       <h1>Editing</h1>
-      <p class="centered_text"><em>edits, montages &amp; videos</em></p>
+      <p class="summary">Selected video work: edits, montages and motion graphics.</p>
 
       <!-- To add a YouTube video, replace the placeholder div with:
-           <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video title"
+           <iframe class="video-player" src="https://www.youtube.com/embed/VIDEO_ID" title="Video title"
                    allowfullscreen loading="lazy"></iframe> -->
       <div class="video-list">
-        <div class="box video-entry">
-          <div class="video-player placeholder">[ ▶ video ]</div>
-          <h3>Edit One</h3>
-          <p>What it is, who it was for, and what you did (cuts, effects, color, sound).</p>
-          <small class="card-meta">Premiere Pro · October 2026</small>
-        </div>
+        <article class="video-entry">
+          <div class="video-player placeholder">video</div>
+          <div class="video-info">
+            <h3>Edit One</h3>
+            <p>What it is, who it was for, and what you did: cuts, effects, color, sound.</p>
+            <span class="card-meta">Premiere Pro · 2026</span>
+          </div>
+        </article>
 
-        <div class="box video-entry">
-          <div class="video-player placeholder">[ ▶ video ]</div>
-          <h3>Edit Two</h3>
-          <p>What it is, who it was for, and what you did (cuts, effects, color, sound).</p>
-          <small class="card-meta">After Effects · August 2026</small>
-        </div>
+        <article class="video-entry">
+          <div class="video-player placeholder">video</div>
+          <div class="video-info">
+            <h3>Edit Two</h3>
+            <p>What it is, who it was for, and what you did: cuts, effects, color, sound.</p>
+            <span class="card-meta">After Effects · 2026</span>
+          </div>
+        </article>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>2026 - 20XX · courierrrrr</p>
+    <p>© <span id="year">2026</span> Your Name</p>
   </footer>
 
   <script src="script.js"></script>
