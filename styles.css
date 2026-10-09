@@ -1,23 +1,25 @@
-/* ---------- Colors: dark by default, light mode swaps them ---------- */
+/* ---------- Colors: navy by default, light mode swaps them ---------- */
 :root {
-  --bg: #0b0b0c;
-  --surface: #131315;
-  --text: #ececec;
-  --muted: #8b8b93;
-  --border: #2a2a2e;
-  --accent: #60a5fa;
+  --bg: #0a1628;
+  --bg-glow: #13284a;
+  --surface: #0f1f38;
+  --text: #e8eef7;
+  --muted: #8da2c0;
+  --border: #1e3352;
+  --accent: #7cc4fa;
   --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "JetBrains Mono", Consolas, monospace;
   color-scheme: dark;
 }
 
 :root[data-theme="light"] {
-  --bg: #fafafa;
+  --bg: #f5f8fc;
+  --bg-glow: #e3ecf8;
   --surface: #ffffff;
-  --text: #111113;
-  --muted: #6b6b73;
-  --border: #e2e2e6;
-  --accent: #2563eb;
+  --text: #0a1628;
+  --muted: #5b6b85;
+  --border: #dbe3ef;
+  --accent: #1d4ed8;
   color-scheme: light;
 }
 
@@ -26,6 +28,9 @@
 /* ---------- Page column ---------- */
 html, body {
   background: var(--bg);
+  background-image: radial-gradient(ellipse 900px 520px at 50% -120px, var(--bg-glow), transparent 70%);
+  background-repeat: no-repeat;
+  min-height: 100%;
   color: var(--text);
   font-family: var(--sans);
   font-size: 16px;
@@ -34,6 +39,7 @@ html, body {
 }
 
 body {
+  background: transparent;
   max-width: 860px;
   margin: 0 auto;
   padding: 0 20px;
@@ -49,7 +55,9 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: var(--bg);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -284,7 +292,7 @@ p:last-child { margin-bottom: 0; }
   border: 0;
   border-bottom: 1px solid var(--border);
   display: block;
-  background: #000;
+  background: var(--bg);
 }
 
 .shorts-grid .video-info { padding: 14px 16px 16px; }
@@ -321,3 +329,10 @@ footer {
   text-transform: uppercase;
   color: var(--accent);
 }
+
+/* Soft navy shadow when hovering cards */
+.card:hover,
+.video-entry:hover { box-shadow: 0 12px 32px -12px rgb(3 10 25 / 0.55); }
+:root[data-theme="light"] .card:hover,
+:root[data-theme="light"] .video-entry:hover { box-shadow: 0 12px 32px -14px rgb(10 22 40 / 0.18); }
+.video-entry { transition: box-shadow 0.15s; }
